@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "worksans", sans-serif;
+}
+body{
+    background-color: var(--chat-background);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    margin:50px;
+    color: var(--text-primary)
+}
+.profile{
+    display: flex;
+    order: 2;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-height: 50vh;
+}
+.profile div{
+    display: flex;
+    flex-direction: column;
+}
+.profile div span{
+    margin: 10px;
+    padding: 10px;
+    color: var(--text-primary);
+    font-size: 17px;
+}
+.profile div input{
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--bar-background);
+    font-size: 16px;
+    color: var(--text-primary);
+    border: 1px solid;
+    border-radius: 20px;
+    outline:none;
+}
+.profile button {
+    background-color: var(--bar-background);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    color: var(--text-primary);
+}
+
+.dark {
+    --text-primary: #ececec;
+    --chat-background: #23232e;
+    --bar-background: #141418;
+}
+
+.light {
+    --text-primary: #000000;
+    --chat-background: #ffffff;
+    --bar-background: #e4e4e4;
+}
+
+.solar {
+    --text-primary: #35535c;
+    --chat-background: #fdf6e3;
+    --bar-background: #f5e5b8;
+}

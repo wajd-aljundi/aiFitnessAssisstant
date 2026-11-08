@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "worksans", sans-serif;
+}
+body{
+    background-color: var(--chat-background);
+}
+
+.chat-container {
+    display: flex;
+    height: 100vh;
+    margin-left: 10vw
+}
+
+#chat-list-container {
+    width: 250px;
+    background-color: var(--chat-background);
+    padding: 5px;
+    border-right: 1px solid --text-primary;
+    box-sizing: border-box;
+}
+
+#chat-list-container h2 {
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: var(--text-primary);
+}
+
+#chat-list {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+#chat-list a{
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+#chat-list li {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: var(--bar-background);
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#chat-list li:hover {
+    background-color: var(--chat-background);
+}
+
+#chat-viewer {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.chat-history {
+    margin-bottom: 5px;
+    background-color: var(--bar-background);
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    max-width:80vh;
+    overflow-y: auto;
+}
+
+.user-msg {
+    align-self: flex-end;
+    background-color: var(--text-primary);
+    padding: 8px;
+    margin: 5px;
+    border-radius: 6px;
+    color: var(--chat-background);
+    width: 50%;
+}
+
+.bot-msg {
+    align-self: flex-start;
+    background-color: var(--text-primary);
+    padding: 8px;
+    margin: 5px;
+    border-radius: 6px;
+    color: var(--chat-background);
+    width: 50%;
+}
+
+.dark {
+    --text-primary: #ececec;
+    --chat-background: #23232e;
+    --bar-background: #141418;
+}
+
+.light {
+    --text-primary: #000000;
+    --chat-background: #ffffff;
+    --bar-background: #e4e4e4;
+}
+
+.solar {
+    --text-primary: #35535c;
+    --chat-background: #fdf6e3;
+    --bar-background: #f5e5b8;
+}

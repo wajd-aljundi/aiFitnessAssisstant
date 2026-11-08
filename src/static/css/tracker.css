@@ -1,0 +1,84 @@
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 92vh;
+    background: var(--section-background, #f6f6f6);
+}
+.tracker-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(100,100,130,0.10);
+    padding: 40px 40px 30px 40px;
+    min-width: 380px;
+    max-width: 430px;
+    width: 100%;
+    margin: 0 auto;
+}
+.tracker-title {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #22223b;
+    font-family: "Work Sans", sans-serif;
+}
+.tracker-section {
+    margin-bottom: 28px;
+}
+.tracker-section h2 {
+    font-size: 1.1em;
+    color: #36395a;
+    margin-bottom: 10px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.tracker-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.tracker-list li {
+    background: #f4f4f7;
+    border-radius: 9px;
+    margin-bottom: 9px;
+    padding: 10px 14px;
+    font-size: 1em;
+    color: #36395a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tracker-list li.sum {
+    background: #e0e3ea;
+    font-weight: 600;
+    color: #22223b;
+}
+.goals-row {
+    font-size: .99em;
+    color: #7a7a7a;
+    text-align: center;
+    margin-bottom: 18px;
+}
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    background: var(--section-background, #f6f6f6);
+}
+.tracker-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(100,100,130,0.10);
+    padding: 40px 40px 30px 40px;
+    min-width: 380px;
+    max-width: 430px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

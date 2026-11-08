@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "worksans", sans-serif;
+}
+body{
+    background-color: var(--chat-background);
+}
+.conversation-layout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.top-part{
+    margin-top: 50px;
+}
+.telefood-header{
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.3ch;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--text-primary);
+    flex-shrink: 0;
+}
+.profile-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: var(--text-primary);
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+.chat-layout{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    max-height:80vh;
+    max-width:80vh;
+    padding: 10px;
+    overflow-y: auto;
+}
+.message {
+    margin-left: auto;
+    max-width: 90%;
+    margin: 8px 0;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: var(--chat-background);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    word-wrap: break-word;
+}
+.user {
+  align-self: flex-end;
+  background-color: var(--text-primary);
+  color : var(--chat-background);
+}
+.bot {
+  align-self: flex-start;
+  background-color: var(--text-primary);
+  color : var(--chat-background)
+}
+.conversation-bar{
+    display: flex;
+    width: 50vh;
+    padding: 10px;
+    margin-bottom: 50px;
+    background-color: var(--bar-background);
+    border: 1px solid --;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+.conversation-bar input{
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid var(--chat-background);
+    border-radius: 20px;
+    outline:none;
+}
+.send-button {
+    width: 40px;
+    height: 40px;
+    background-color: var(--text-primary);
+    margin-left: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--chat-background);
+    cursor: pointer;
+}
+
+.dark {
+    --text-primary: #ececec;
+    --chat-background: #23232e;
+    --bar-background: #141418;
+}
+
+.light {
+    --text-primary: #000000;
+    --chat-background: #ffffff;
+    --bar-background: #e4e4e4;
+}
+
+.solar {
+    --text-primary: #35535c;
+    --chat-background: #fdf6e3;
+    --bar-background: #f5e5b8;
+}
